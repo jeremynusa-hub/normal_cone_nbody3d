@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, formal Lean 4 proofs, or benchmark datasets in your research, please cite it using the metadata below."
+type: software
+title: "Normal-Cone Is All You Need: Unsoftened Fulton-MacPherson Symplectic Integration of the 3D Newtonian N-Body Problem"
+version: 1.0.0
+date-released: 2026-11-04
+authors:
+  - family-names: "Nusa"
+    given-names: "Jérémy"
+abstract: >-
+  Companion dual-precision Python software (IEEE-754 Float64 with Numba @njit
+  and 116-bit / 35-digit Float128 mirror), Lean 4 + Mathlib 4 formal verification
+  suite (35 Appendix A modules, 416 declarations, 214 theorems, 0 sorryAx), and
+  reproducible numerical benchmark datasets for unsoftened (epsilon = 0, d_0 = 0)
+  symplectic integration of the three-dimensional gravitational N-body problem
+  on the Fulton-MacPherson wonderful compactification Q[N].
+keywords:
+  - celestial-mechanics
+  - n-body-problem
+  - symplectic-integrators
+  - normal-cone
+  - fulton-macpherson-compactification
+  - collision-regularization
+  - blanes-moan-splitting
+  - symplectic-correctors
+  - lean4
+  - formal-verification
+license: CC-BY-NC-SA-4.0
+preferred-citation:
+  type: report
+  title: "Normal-Cone Is All You Need: Unsoftened Fulton-MacPherson Symplectic Integration of the 3D Newtonian N-Body Problem"
+  authors:
+    - family-names: "Nusa"
+      given-names: "Jérémy"
+  year: 2026
+  version: "1.0.0"

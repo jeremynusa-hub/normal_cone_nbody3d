@@ -1,0 +1,27 @@
+{
+  "title": "Normal-Cone Is All You Need: Unsoftened Fulton-MacPherson Symplectic Integration of the 3D Newtonian N-Body Problem — Companion Lean 4 Formal Proofs, Dual-Precision Python Software & Benchmark Datasets (v1.0.0)",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "publication_date": "2026-11-04",
+  "creators": [
+    {
+      "name": "Nusa, Jérémy"
+    }
+  ],
+  "description": "<p>Companion archival repository for the monograph <em>Normal-Cone Is All You Need: Unsoftened Fulton–MacPherson Symplectic Integration of the 3D Newtonian N-Body Problem</em> (<code>v1.0.0</code>). This archive contains three certified pillars:</p><ol><li><strong>Lean 4 + Mathlib 4 Formal Verification Suite (<code>lean4/</code>, Appendix A §A.1–§A.20)</strong>: 35 formal modules and 5 self-contained chapter compilation suites (416 formal declarations, 214 theorems, 99 explicit <code>#print axioms</code> checks, <code>0 sorryAx</code>) certifying the Darboux 2-form, the 10-generator Galilean–Bargmann Lie–Poisson algebra, the deformation to the normal cone, the Heavy Top Casimirs, the synodic PCR3BP and Levi-Civita covering, the Fulton–MacPherson hierarchy Q[N], the universal C^{1,1} screened apex bounds, the synchronous super-node anti-Zeno scaling, the palindromic splitting hierarchy (S2, Suzuki S4, BM4, BM6, PBM4), the non-commutative inter-chart gauge connection T_{A->B}^{(PBM4)}, and the bidegree-(3,2) Hall Lie algebra L(5,2) universal sixth-order obstruction theorem.</li><li><strong>Dual-Precision Symplectic N-Body Engines (<code>normal_cone_nbody_float64/</code> &amp; <code>normal_cone_nbody_float128/</code>, Appendix A §A.21)</strong>: 1-to-1 mirrored production libraries in hardware IEEE-754 <code>Float64</code> (46 modules, Numba <code>@njit</code>) and 116-bit / 35-digit quadruple-precision <code>Float128</code> (46 modules), together with the 7 standalone Appendix A reference interfaces (<code>interfaces/</code>) and 330 automated unit tests (<code>tests/</code>).</li><li><strong>Reproducible Benchmark Campaigns &amp; Certified JSON Datasets (<code>benchmarks/</code>, <code>figures/</code>, <code>results/campaigns/</code>, <code>scripts/</code>)</strong>: 8 benchmark generators (Chapters 6 &amp; 7, including head-to-head confrontations against <code>REBOUND 5.2.2</code> WHFast, MERCURIUS, TRACE, and IAS15 across protocols B1, B2, and B4), 14 certified JSON datasets, and 8 publication figure plotters (300 DPI PDF/PNG).</li></ol>",
+  "license": "CC-BY-NC-SA-4.0",
+  "access_right": "open",
+  "keywords": [
+    "celestial mechanics",
+    "N-body problem",
+    "symplectic integrators",
+    "deformation to the normal cone",
+    "Fulton-MacPherson compactification",
+    "collision regularization",
+    "symplectic correctors",
+    "Lean 4",
+    "formal verification",
+    "REBOUND benchmark"
+  ],
+  "notes": "Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). Academic and non-commercial research use only; all commercial rights, corporate R&D use, and commercial derivative translations (e.g. C/C++/Rust/CUDA ports) are strictly reserved to the copyright holder Jérémy Nusa."
+}

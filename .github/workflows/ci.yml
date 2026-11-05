@@ -1,0 +1,58 @@
+name: Lean 4 Formal Proofs & Dual-Precision Python CI
+
+on:
+  push:
+    branches: [ main, master ]
+    tags: [ "v*" ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  lean4-formal-proofs:
+    name: "Lean 4 Formal Verification (35 Modules, 0 sorryAx)"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11 for SHA-256 & Axiom Hygiene Auditor
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run syntactic & SHA-256 audit on 35 Appendix A modules
+        run: python lean4/scripts/verify_lean4_suite.py
+
+      - name: Compile Lean 4 Certified Chapter Suites & Verify #print axioms
+        uses: leanprover/lean-action@v1
+        with:
+          project-path: "lean4"
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+
+  python-symplectic-suite:
+    name: "Python Symplectic Suite (Float64, Float128 & Figure Reproduction)"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install package and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Run Tier 2 Smoke Tests (Lean 4 Audit + Showcase Interfaces + 330 Float64/Float128 Unit Tests)
+        run: python scripts/run_smoke_tests.py
+
+      - name: Run Tier 1 Fast Figure Regeneration (14 Certified JSONs -> 30 Publication Plates)
+        run: python scripts/reproduce_figures.py

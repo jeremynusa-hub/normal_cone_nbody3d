@@ -1,0 +1,24 @@
+# Python byte-compiled / caches / packaging
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Lean 4 / Lake build artifacts & downloaded packages
+lean4/.lake/
+lean4/build/
+
+# Regenerated figures (reproducible in <45s via `python scripts/reproduce_figures.py`)
+results/figures/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
