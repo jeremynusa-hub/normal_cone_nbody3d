@@ -1,0 +1,47 @@
+Academic & Non-Commercial Research License (CC BY-NC-SA 4.0 — Commercial Rights Reserved)
+=========================================================================================
+
+Copyright (c) 2026 Jérémy Nusa. All Commercial Rights Reserved.
+
+1. GRANT OF ACADEMIC & NON-COMMERCIAL LICENSE (CC BY-NC-SA 4.0)
+   All Python source code (`normal_cone_nbody_float64/`, `normal_cone_nbody_float128/`,
+   `interfaces/`, `benchmarks/`, `figures/`, `tests/`, `scripts/`), all Lean 4 formal
+   verification modules (`lean4/`), all numerical benchmark datasets
+   (`results/campaigns/*.json`), and all generated figures (`results/figures/`) in this
+   repository are licensed under the:
+
+     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+     (CC BY-NC-SA 4.0 — https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+
+   supplemented by the Explicit Non-Commercial Software & Derivative Works Clause below.
+
+2. EXPLICIT PROHIBITION OF COMMERCIAL USE & DERIVATIVE TRANSLATIONS
+   Without a separate prior written commercial license agreement executed with the
+   Copyright Holder (Jérémy Nusa):
+   (a) No commercial entity or individual may use, execute, host, or deploy this
+       software, its mathematical micro-kernels, its 6-phase pipeline architecture,
+       or its benchmark datasets for any commercial purpose, internal corporate R&D,
+       commercial simulation service, cloud/SaaS offering, or commercial product.
+   (b) Any translation, port, adaptation, or re-implementation of this software's
+       architecture, classes, or modules into another programming language (including,
+       without limitation, C, C++, Rust, Fortran, Julia, CUDA, or hardware shaders)
+       constitutes a Derivative Work under international copyright law (Berne Convention
+       Art. 2 & 12) and is strictly prohibited for any commercial or proprietary use.
+   (c) Academic researchers, universities, public research institutes, and journal
+       referees are freely permitted to inspect, execute, verify, modify, and build
+       upon this work for non-commercial scientific research and peer review, provided
+       that proper attribution is given to Jérémy Nusa and any derivative academic work
+       is distributed under the same CC BY-NC-SA 4.0 license.
+
+3. COMMERCIAL LICENSING INQUIRIES
+   For commercial licensing, industrial R&D authorization, or proprietary integration
+   agreements, please contact the author and sole copyright holder: Jérémy Nusa.
+
+4. DISCLAIMER OF WARRANTY
+   THIS WORK, SOFTWARE, FORMAL PROOFS, AND DATASETS ARE PROVIDED "AS IS", WITHOUT
+   WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+   WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDER BE LIABLE FOR
+   ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT,
+   OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE WORK OR THE USE OR
+   OTHER DEALINGS IN THE WORK.
